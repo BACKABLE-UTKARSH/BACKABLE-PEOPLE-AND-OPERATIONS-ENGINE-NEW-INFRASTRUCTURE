@@ -972,10 +972,23 @@
         async function checkBackendConnection() {
             console.log('🔄 Checking backend connection...');
             updateConnectionStatus('checking');
-            
+
             try {
-                const response = await makeAPICall('/health');
-                backendConnected = response.status === 'healthy';
+                // Use regular fetch for /health - doesn't require authentication
+                const response = await fetch(`${API_BASE_URL}/health`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                backendConnected = data.status === 'healthy';
                 console.log('✅ Backend connected:', backendConnected);
                 updateConnectionStatus('connected');
                 return backendConnected;
