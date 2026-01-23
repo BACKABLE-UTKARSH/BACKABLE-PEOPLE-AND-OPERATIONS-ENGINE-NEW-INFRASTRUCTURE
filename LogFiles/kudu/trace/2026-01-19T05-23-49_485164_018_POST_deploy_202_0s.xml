@@ -1,0 +1,16 @@
+<step title="Incoming Request" date="2026-01-19T05:23:49.465" instance="485164" url="/deploy?scmType=ExternalGit&amp;isAsync=true" method="POST" type="request" pid="768,1,7" Host="backable-people-and-operation-engine-new.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/106.0.7.121" Authorization="Bas..." Expect="100-continue" Content-Length="132" x-ms-request-id="67056a9c-1981-4f34-aab5-c67ede3fdc05" X-ARR-LOG-ID="67056a9c-1981-4f34-aab5-c67ede3fdc05" CLIENT-IP="20.211.64.31:3009" X-SITE-DEPLOYMENT-ID="backable-people-and-operation-engine-new" WAS-DEFAULT-HOSTNAME="backable-people-and-operation-engine-new.scm.azurewebsites.net" X-MS-PLATFORM-INTERNAL="True" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/deploy?scmType=ExternalGit&amp;isAsync=true" X-Client-IP="20.211.64.31" X-Client-Port="3009" >
+  <step title="Cleanup Xml Logs" date="2026-01-19T05:23:49.468" /><!-- duration: 5ms -->
+  <step title="FetchHandler" date="2026-01-19T05:23:49.480" >
+    <step title="Executing external process" date="2026-01-19T05:23:49.493" type="process" path="git" arguments="rev-parse --git-dir" /><!-- duration: 15ms -->
+    <step title="Executing external process" date="2026-01-19T05:23:49.516" type="process" path="git" arguments="rev-parse --git-dir" /><!-- duration: 10ms -->
+    <step title="Executing external process" date="2026-01-19T05:23:49.528" type="process" path="git" arguments="log -n 1 main --" /><!-- duration: 40ms -->
+    <step title="Start deployment in the background" date="2026-01-19T05:23:49.571" >
+      <step title="Executing external process" date="2026-01-19T05:23:49.589" type="process" path="git" arguments="rev-parse --git-dir" /><!-- duration: 8ms -->
+      <step title="Executing external process" date="2026-01-19T05:23:49.599" type="process" path="git" arguments="rev-parse --git-dir" /><!-- duration: 8ms -->
+      <step title="Executing external process" date="2026-01-19T05:23:49.609" type="process" path="git" arguments="log -n 1 main --" /><!-- duration: 27ms -->
+      <step title="Acquiring Deployment Lock" date="2026-01-19T05:23:49.638" /><!-- duration: 2ms -->
+      <step title="Acquired Deployment Lock" date="2026-01-19T05:23:49.682" /><!-- duration: 3ms -->
+    </step><!-- duration: 177ms -->
+  </step><!-- duration: 271ms -->
+  <step title="Outgoing response" date="2026-01-19T05:23:49.754" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 2ms -->
+</step><!-- duration: 293ms -->

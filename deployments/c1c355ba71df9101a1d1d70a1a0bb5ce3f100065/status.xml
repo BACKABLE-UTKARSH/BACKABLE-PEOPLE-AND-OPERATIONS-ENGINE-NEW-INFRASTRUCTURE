@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>c1c355ba71df9101a1d1d70a1a0bb5ce3f100065</id>
+  <author>Backable AI</author>
+  <deployer>GitHub</deployer>
+  <authorEmail>backable@ai.com</authorEmail>
+  <message>Add app.py wrapper and update startup script</message>
+  <progress></progress>
+  <status>Failed</status>
+  <statusText>Deployment has been stopped due to SCM container restart. The restart can happen due to a management operation on site. Do not perform a management operation and a deployment operation in quick succession. Adding a small delay can help avoid any conflicts.</statusText>
+  <lastSuccessEndTime>2026-01-19T05:22:48.2776611Z</lastSuccessEndTime>
+  <receivedTime>2026-01-19T05:21:49.0560559Z</receivedTime>
+  <startTime>2026-01-19T05:23:53.3501772Z</startTime>
+  <endTime>2026-01-19T05:23:59.4076694Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+  <buildSummary />
+</deployment>

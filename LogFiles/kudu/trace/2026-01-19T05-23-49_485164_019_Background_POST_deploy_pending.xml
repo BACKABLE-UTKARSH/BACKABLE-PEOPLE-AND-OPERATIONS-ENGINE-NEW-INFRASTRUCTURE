@@ -1,0 +1,15 @@
+<step title="BackgroundTrace" date="2026-01-19T05:23:49.573" instance="485164" url="/deploy" method="POST" >
+  <step title="Creating temporary deployment - FetchDeploymentManager" date="2026-01-19T05:23:49.687" /><!-- duration: 2ms -->
+  <step title="Creating temporary deployment" date="2026-01-19T05:23:49.691" /><!-- duration: 54ms -->
+  <step title="Performing fetch based deployment" date="2026-01-19T05:23:49.810" >
+    <step title="Deployment timer started" date="2026-01-19T05:23:51.872" >
+      <step title="DeploymentManager.Deploy(id:c1c355ba71df9101a1d1d70a1a0bb5ce3f100065)" date="2026-01-19T05:23:51.879" >
+        <step title="Collecting changeset information" date="2026-01-19T05:23:51.894" /><!-- duration: 97ms -->
+        <step title="Updating submodules" date="2026-01-19T05:23:52.046" /><!-- duration: 1126ms -->
+        <step title="Determining deployment builder" date="2026-01-19T05:23:53.420" >
+          <step title="Builder is OryxBuilder" date="2026-01-19T05:23:53.424" /><!-- duration: 2ms -->
+        </step><!-- duration: 9ms -->
+        <step title="PreDeployment: context.CleanOutputPath False" date="2026-01-19T05:23:53.479" >
+          <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-01-19T05:23:53.615" >
+            <step title="Building" date="2026-01-19T05:23:53.739" >
+              <step title="Executing external process" date="2026-01-19T05:23:53.991" type="process" path="bash" arguments="-c &quot;oryx build /home/site/repository -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8de571aefa1f5b2 --compress-destination-dir | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" 

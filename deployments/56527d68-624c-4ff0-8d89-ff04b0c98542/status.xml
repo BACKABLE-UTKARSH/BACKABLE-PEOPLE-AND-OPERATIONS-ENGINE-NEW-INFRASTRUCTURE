@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>56527d68-624c-4ff0-8d89-ff04b0c98542</id>
+  <author>N/A</author>
+  <deployer>GITHUB_ZIP_DEPLOY</deployer>
+  <authorEmail>N/A</authorEmail>
+  <message>N/A</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2026-01-19T05:37:30.0919346Z</lastSuccessEndTime>
+  <receivedTime>2026-01-19T05:36:28.6090526Z</receivedTime>
+  <startTime>2026-01-19T05:36:30.043632Z</startTime>
+  <endTime>2026-01-19T05:37:30.0919346Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>True</is_readonly>
+  <buildSummary />
+</deployment>

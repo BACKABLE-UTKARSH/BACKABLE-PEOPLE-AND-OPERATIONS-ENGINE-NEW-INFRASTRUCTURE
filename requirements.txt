@@ -8,6 +8,9 @@ starlette==0.47.2
 psycopg2-binary==2.9.10
 asyncpg==0.30.0
 
+# Authentication
+PyJWT==2.8.0
+
 # Azure
 azure-core==1.35.0
 azure-storage-blob==12.26.0
